@@ -1,0 +1,9 @@
+*.suo
+*.cache
+*.pdb
+*.exe
+*.dll
+*.zip
+*.rar
+bin
+obj
