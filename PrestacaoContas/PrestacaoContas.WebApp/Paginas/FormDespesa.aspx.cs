@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using ControleUsuarios.AppLib.Facade;
+using PrestacaoContas.AppLib.Facade;
 using PrestacaoContas.AppLib;
 
 namespace PrestacaoContas.WebApp.Paginas

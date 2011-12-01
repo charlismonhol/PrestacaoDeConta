@@ -5,7 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using PrestacaoConta.AppLib.Facade;
-using ControleUsuarios.AppLib.Facade;
+using PrestacaoContas.AppLib.Facade;
+using PrestacaoContas.AppLib;
 
 
 namespace PrestacaoContas.WebApp.Paginas
@@ -20,9 +21,12 @@ namespace PrestacaoContas.WebApp.Paginas
                cbxFuncionario.DataTextField       = "nome";
                cbxFuncionario.DataValueField      = "codigo";
                cbxFuncionario.DataBind();
-
+            
                 //para buscar o valor do funcionário int.Parse(cbxFuncionario.SelectedItem.Value irá pegar o valor do DataValueField
             }
+            AdiantamentoFacade facade = new AdiantamentoFacade();
+            carregarGrid(facade);
+      
         }
 
         private void carregarGrid(AdiantamentoFacade facade)
@@ -34,6 +38,7 @@ namespace PrestacaoContas.WebApp.Paginas
         private void limparCampos()
         {
             txtCodigo.Value = null;
+            txtCodigoAdiantamento.Text = "";
             txtDescricao.Text = "";
             cbxFuncionario.SelectedItem.Value = null;
             //dpcDataAdiantamento.se = null;
@@ -80,6 +85,21 @@ namespace PrestacaoContas.WebApp.Paginas
         protected void txtCodigo_ValueChanged(object sender,EventArgs e)
         {
 
+        }
+
+        protected void GridViewAdiantamento_SelectedIndexChanged(object sender,EventArgs e)
+        {
+            //Obtendo o conteúdo do datasource
+            PrestacaoContasDataSet.AdiantamentoDataTable adiantamentoDataTable = (PrestacaoContasDataSet.AdiantamentoDataTable)GridViewAdiantamento.DataSource;
+            PrestacaoContasDataSet.AdiantamentoRow row = (PrestacaoContasDataSet.AdiantamentoRow)adiantamentoDataTable.Rows[GridViewAdiantamento.SelectedIndex];
+            txtCodigoAdiantamento.Text = row.codigo_adiantamento.ToString();
+            cbxFuncionario.Items.FindByValue(row.codigo_adiantamento.ToString());
+            //txtLogin.Text = row.Login;
+            //txtSenha.Text = row.Senha;
+            //txtConfirmaSenha.Text = row.Senha;
+            //txtTipoFuncionario.SelectedIndex = 1;   
+           
+          btnRemover.Enabled = true;
         }
     }
 }

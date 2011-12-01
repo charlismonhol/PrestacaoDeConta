@@ -148,6 +148,7 @@
     </Compile>
     <Compile Include="Paginas\FormPrestarContas.aspx.cs">
       <DependentUpon>FormPrestarContas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Paginas\FormPrestarContas.aspx.designer.cs">
       <DependentUpon>FormPrestarContas.aspx</DependentUpon>

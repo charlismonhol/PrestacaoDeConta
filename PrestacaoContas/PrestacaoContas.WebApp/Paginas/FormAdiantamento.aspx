@@ -6,7 +6,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-<script src="~/Scripts/js/jquery-1.6.2.min.js" type="text/javascript" ></script> 
+  <script src="~/Scripts/js/jquery-1.6.2.min.js" type="text/javascript" ></script> 
 <link href="~/Scripts/themes/base/jquery.ui.datepicker.css" rel="stylesheet" type="text/css"></link>
   <script>
     (function () {
@@ -18,7 +18,12 @@
     Cadastro de Adiantamenstos de Viagens/Diárias
   </h2>
   <asp:HiddenField ID="txtCodigo" runat="server" 
-    onvaluechanged="txtCodigo_ValueChanged" />
+  onvaluechanged="txtCodigo_ValueChanged" />
+  <br />
+  <asp:Label ID="Label4" runat="server" Text="Código:"></asp:Label>
+  <asp:TextBox ID="txtCodigoAdiantamento" runat="server" CssClass="textEntry" 
+    Enabled="False" ForeColor="#666666" ReadOnly="True" Width="58px"></asp:TextBox>
+  <br />
   <br />
   <asp:Label ID="Label3" runat="server" Text="Funcionário"></asp:Label>
   <asp:DropDownList ID="cbxFuncionario" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"
@@ -43,8 +48,18 @@
     </tr>
   </table>
   <br />
+  <br />
+  <asp:Button ID="btnGravar" runat="server" Text="Gravar" OnClick="btnGravar_Click1"
+    ValidationGroup="CamposObrigatorios" />
+  <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" />
+  <asp:Button ID="btnRemover" runat="server" Text="Remover" ValidationGroup="CamposObrigatorios"
+    Enabled="False" />
+  <br />
+  <br />
   <asp:GridView ID="GridViewAdiantamento" runat="server" CellPadding="4" ForeColor="#333333"
-    GridLines="None" AutoGenerateSelectButton="True">
+    GridLines="None" AutoGenerateSelectButton="True" 
+    onselectedindexchanged="GridViewAdiantamento_SelectedIndexChanged" 
+    Width="502px">
     <AlternatingRowStyle BackColor="White" />
     <EditRowStyle BackColor="#7C6F57" />
     <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
@@ -82,11 +97,6 @@
   </div>
   <br />
   <br />
-  <asp:Button ID="btnGravar" runat="server" Text="Gravar" OnClick="btnGravar_Click1"
-    ValidationGroup="CamposObrigatorios" />
-  <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" />
-  <asp:Button ID="btnRemover" runat="server" Text="Remover" ValidationGroup="CamposObrigatorios"
-    Enabled="False" />
   <br />
   <br />
   <br />
