@@ -5,6 +5,8 @@
 <head runat="server">
     <title></title>
     <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <script src="../Scripts/js/Mascara.js" type="text/javascript"></script>
+
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -56,7 +58,8 @@
                         </asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/Paginas/FormAdiantamento.aspx" Text="Viagens" 
                           Value="Viagens"></asp:MenuItem>
-                        <asp:MenuItem Text="Prestar Contas" Value="Prestar Contas"></asp:MenuItem>
+                        <asp:MenuItem Text="Prestar Contas" Value="Prestar Contas" 
+                          NavigateUrl="~/Paginas/FormPrestarContas.aspx"></asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/Paginas/About.aspx" Text="Sobre" Value="Sobre"/>
                     </Items>
                     <StaticItemTemplate>
