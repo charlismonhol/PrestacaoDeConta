@@ -63,6 +63,7 @@
     <Content Include="Paginas\FormDespesa.aspx" />
     <Content Include="Paginas\FormFuncionario.aspx" />
     <Content Include="Paginas\FormMunicipio.aspx" />
+    <Content Include="Paginas\FormPrestarContas.aspx" />
     <Content Include="Paginas\Login.aspx" />
     <Content Include="Services\PrestacaoContasServicos.asmx" />
     <Content Include="Styles\Site.css" />
@@ -144,6 +145,12 @@
     </Compile>
     <Compile Include="Paginas\FormMunicipio.aspx.designer.cs">
       <DependentUpon>FormMunicipio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\FormPrestarContas.aspx.cs">
+      <DependentUpon>FormPrestarContas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\FormPrestarContas.aspx.designer.cs">
+      <DependentUpon>FormPrestarContas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
