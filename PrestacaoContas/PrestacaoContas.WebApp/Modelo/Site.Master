@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="PrestacaoContas.WebApp.Modelo.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="formPrincipal" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    controle de diarias de funcionário
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server">
+                    <AnonymousTemplate>
+                        [ <a href="~/Paginas/Login.aspx" ID="HeadLoginStatus" runat="server">Logar</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Funcion <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Sair" LogoutPageUrl="~/Paginas/Login.aspx"/> ]
+                    </LoggedInTemplate>
+                    <RoleGroups>
+                      <asp:RoleGroup>
+                        <ContentTemplate>
+                          Funcionário:
+                        </ContentTemplate>
+                      </asp:RoleGroup>
+                      <asp:RoleGroup>
+                      </asp:RoleGroup>
+                    </RoleGroups>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink" id="dvMenu">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                  EnableViewState="False" IncludeStyleBlock="False" Orientation="Horizontal" 
+                  onmenuitemclick="NavigationMenu_MenuItemClick" StaticSubMenuIndent="16px">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Paginas/Default.aspx" Text="Principal" 
+                          Value="Principal"></asp:MenuItem>
+                        <asp:MenuItem Text="Cadastros Básicos" ToolTip="Cadastros Básicos" 
+                          Value="Principal">
+                          <asp:MenuItem Text="Funcionários" Value="Funcionários" 
+                            NavigateUrl="~/Paginas/FormFuncionario.aspx"></asp:MenuItem>
+                          <asp:MenuItem NavigateUrl="~/Paginas/FormDespesa.aspx" Text="Despesas" 
+                            Value="Despesas"></asp:MenuItem>
+                          <asp:MenuItem NavigateUrl="~/Paginas/FormMunicipio.aspx" Text="Municípios" 
+                            Value="Municípios"></asp:MenuItem>
+                          <asp:MenuItem Enabled="False" Text="Empresa" Value="Empresa"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Paginas/FormAdiantamento.aspx" Text="Viagens" 
+                          Value="Viagens"></asp:MenuItem>
+                        <asp:MenuItem Text="Prestar Contas" Value="Prestar Contas"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Paginas/About.aspx" Text="Sobre" Value="Sobre"/>
+                    </Items>
+                    <StaticItemTemplate>
+                      <%# Eval("Text") %>
+                    </StaticItemTemplate>
+                </asp:Menu>
+                
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer" 
+      style="font-family: 'Times New Roman', Times, serif; font-size: xx-small" 
+      title="dddd">
+        
+      Pós Faesa - 2011</div>
+    </form>
+</body>
+</html>
