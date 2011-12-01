@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.ComponentModel;
 
-namespace ControleUsuarios.WebApp.Controles
+namespace PrestacaoContas.WebApp.Controles
 {
     public partial class DatePickerControl : System.Web.UI.UserControl
     {

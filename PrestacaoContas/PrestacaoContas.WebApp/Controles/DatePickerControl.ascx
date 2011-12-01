@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="DatePickerControl.ascx.cs" Inherits="ControleUsuarios.WebApp.Controles.DatePickerControl" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="DatePickerControl.ascx.cs" Inherits="PrestacaoContas.WebApp.Controles.DatePickerControl" %>
 <asp:Label ID="lblDate" runat="server" Text="Data:"></asp:Label>
 <asp:TextBox ID="txtDate" runat="server"></asp:TextBox>
 <asp:Button ID="btnCalendario" runat="server" Text="..." 

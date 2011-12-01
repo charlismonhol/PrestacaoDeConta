@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ControleUsuarios.WebApp.Controles {
+namespace PrestacaoContas.WebApp.Controles {
     
     
     public partial class DatePickerControl {
