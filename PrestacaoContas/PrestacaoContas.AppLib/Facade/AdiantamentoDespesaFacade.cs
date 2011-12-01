@@ -7,7 +7,7 @@ using PrestacaoContas.AppLib;
        
 namespace PrestacaoContas.AppLib.Facade
 {
-    /// <summary>
+     /// <summary>
     /// Classe de Fachada de Segurança
     /// </summary>
     public class AdiantamentoDespesaFacade
