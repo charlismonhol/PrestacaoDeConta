@@ -7181,9 +7181,8 @@ FROM            vw_adiantamento_funcionario";
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
             this._commandCollection[1].CommandText = @"SELECT ano_adiantamento, codigo_adiantamento, codigo_funcionario, data_adiantamento, data_final_viagem, data_inicial_viagem, data_prestacao, mes_adiantamento, nome_funcionario, valor_adiantamento, valor_apresentado, valor_fechamento FROM vw_adiantamento_funcionario 
-WHERE (0 = (CASE WHEN ( @codigo_funcionario = - 1) THEN 0 ELSE (CASE WHEN (codigo_funcionario = @codigo_funcionario) THEN 0 ELSE - 999 END)  END)) ";
+WHERE (0 = (CASE WHEN ( @codigo_funcionario = - 1) THEN 0 ELSE (CASE WHEN (codigo_funcionario = @codigo_funcionario) THEN 0 ELSE - 999 END)  END))";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Codigo_funcionario", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7214,9 +7213,8 @@ WHERE (0 = (CASE WHEN ( @codigo_funcionario = - 1) THEN 0 ELSE (CASE WHEN (codig
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillByVwAdiantamentoFuncionarioFunc(PrestacaoContasDataSet.vw_adiantamento_funcionarioDataTable dataTable, int Codigo_funcionario) {
+        public virtual int FillByVwAdiantamentoFuncionarioFunc(PrestacaoContasDataSet.vw_adiantamento_funcionarioDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
-            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Codigo_funcionario));
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -7228,9 +7226,8 @@ WHERE (0 = (CASE WHEN ( @codigo_funcionario = - 1) THEN 0 ELSE (CASE WHEN (codig
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual PrestacaoContasDataSet.vw_adiantamento_funcionarioDataTable GetDataByVwAdiantamentoFuncionarioFunc(int Codigo_funcionario) {
+        public virtual PrestacaoContasDataSet.vw_adiantamento_funcionarioDataTable GetDataByVwAdiantamentoFuncionarioFunc() {
             this.Adapter.SelectCommand = this.CommandCollection[1];
-            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Codigo_funcionario));
             PrestacaoContasDataSet.vw_adiantamento_funcionarioDataTable dataTable = new PrestacaoContasDataSet.vw_adiantamento_funcionarioDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

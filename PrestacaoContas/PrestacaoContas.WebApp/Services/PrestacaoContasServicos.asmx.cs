@@ -10,7 +10,7 @@ using PrestacaoConta.AppLib.Facade;
 namespace PrestacaoContas.WebApp.Services
 {
   /// <summary>
-  /// Summary description for PrestacaoContasServicos
+  /// Summary  description for PrestacaoContasServicos
   /// </summary>
   /// 
 

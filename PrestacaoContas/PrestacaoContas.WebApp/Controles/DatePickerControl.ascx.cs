@@ -56,7 +56,7 @@ namespace PrestacaoContas.WebApp.Controles
             this.SelectedDate = calCalendar.SelectedDate;
             this.calCalendar.VisibleDate = this.SelectedDate;
             txtDate.Text = this.SelectedDate.ToString("dd/MM/yyyy");
-            calCalendar.Visible = false;
+             calCalendar.Visible = false;
         }
     }
 }

@@ -35,6 +35,7 @@ namespace PrestacaoContas.AppLib {
 namespace PrestacaoContas.AppLib.PrestacaoContasDataSetTableAdapters {
   partial class Adiantamento_DespesaTableAdapter
   {
+     
   }
 
   partial class vw_adiantamento_funcionarioTableAdapter
