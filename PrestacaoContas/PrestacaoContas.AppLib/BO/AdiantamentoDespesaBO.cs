@@ -39,7 +39,7 @@ namespace PrestacaoContas.AppLib.BO
         public void Deletar(int codigo)
         {
             tableAdapter.DeleteAdiantamentoDespesa(codigo);
-            //charlis monhol jhgjhgjhghgj
+            //charlis monhol teste
 
         }
 
