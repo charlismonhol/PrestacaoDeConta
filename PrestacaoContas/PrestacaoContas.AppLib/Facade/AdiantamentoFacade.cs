@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ControleUsuarios.AppLib.BO;
+using PrestacaoContas.AppLib.BO;
 using PrestacaoContas.AppLib;
 
-namespace ControleUsuarios.AppLib.Facade
+namespace PrestacaoContas.AppLib.Facade
 {
     /// <summary>
     /// Classe de Fachada de Segurança

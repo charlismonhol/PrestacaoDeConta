@@ -41,10 +41,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BO\AdiantamentoBO.cs" />
+    <Compile Include="BO\AdiantamentoDespesaBO.cs" />
+    <Compile Include="BO\VwAdiantamentoFuncionarioBO.cs" />
     <Compile Include="BO\DespesaBO.cs" />
     <Compile Include="BO\FuncionarioBO.cs" />
     <Compile Include="BO\MunicipioBO.cs" />
     <Compile Include="Facade\AdiantamentoFacade.cs" />
+    <Compile Include="Facade\AdiantamentoDespesaFacade.cs" />
+    <Compile Include="Facade\VwAdiantamentoFuncionarioFacade.cs" />
     <Compile Include="Facade\DespesaFacade.cs" />
     <Compile Include="Facade\FuncionarioFacade.cs" />
     <Compile Include="Facade\MunicipioFacade.cs" />

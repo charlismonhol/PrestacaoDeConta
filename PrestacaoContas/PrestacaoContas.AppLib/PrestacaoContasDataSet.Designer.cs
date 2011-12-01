@@ -383,11 +383,11 @@ namespace PrestacaoContas.AppLib {
             this.Relations.Add(this.relationFK__Adiantame__codig__0CBAE877);
             this.relationFK__Adiantame__codig__117F9D94 = new global::System.Data.DataRelation("FK__Adiantame__codig__117F9D94", new global::System.Data.DataColumn[] {
                         this.tableAdiantamento.codigo_adiantamentoColumn}, new global::System.Data.DataColumn[] {
-                        this.tableAdiantamento_Despesa.codigo_adiantamentoColumn}, false);
+                        this.tableAdiantamento_Despesa.CodigoAdiantamentoColumn}, false);
             this.Relations.Add(this.relationFK__Adiantame__codig__117F9D94);
             this.relationFK__Adiantame__codig__1273C1CD = new global::System.Data.DataRelation("FK__Adiantame__codig__1273C1CD", new global::System.Data.DataColumn[] {
                         this.tableDespesa.CodigoColumn}, new global::System.Data.DataColumn[] {
-                        this.tableAdiantamento_Despesa.codigo_despesaColumn}, false);
+                        this.tableAdiantamento_Despesa.CodigoDespesaColumn}, false);
             this.Relations.Add(this.relationFK__Adiantame__codig__1273C1CD);
             this.relationFK__Adiantame__codig__173876EA = new global::System.Data.DataRelation("FK__Adiantame__codig__173876EA", new global::System.Data.DataColumn[] {
                         this.tableAdiantamento.codigo_adiantamentoColumn}, new global::System.Data.DataColumn[] {
@@ -1139,17 +1139,17 @@ namespace PrestacaoContas.AppLib {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class Adiantamento_DespesaDataTable : global::System.Data.TypedTableBase<Adiantamento_DespesaRow> {
             
-            private global::System.Data.DataColumn columncodigo_adiantamento_despesa;
+            private global::System.Data.DataColumn columnCodigo;
             
-            private global::System.Data.DataColumn columncodigo_adiantamento;
+            private global::System.Data.DataColumn columnCodigoAdiantamento;
             
-            private global::System.Data.DataColumn columncodigo_despesa;
+            private global::System.Data.DataColumn columnCodigoDespesa;
             
-            private global::System.Data.DataColumn columndata_viagem;
+            private global::System.Data.DataColumn columnDataViagem;
             
-            private global::System.Data.DataColumn columnvalor_adiantado;
+            private global::System.Data.DataColumn columnValorAdiantado;
             
-            private global::System.Data.DataColumn columnvalor_apresentado;
+            private global::System.Data.DataColumn columnValorApresentado;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -1186,49 +1186,49 @@ namespace PrestacaoContas.AppLib {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn codigo_adiantamento_despesaColumn {
+            public global::System.Data.DataColumn CodigoColumn {
                 get {
-                    return this.columncodigo_adiantamento_despesa;
+                    return this.columnCodigo;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn codigo_adiantamentoColumn {
+            public global::System.Data.DataColumn CodigoAdiantamentoColumn {
                 get {
-                    return this.columncodigo_adiantamento;
+                    return this.columnCodigoAdiantamento;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn codigo_despesaColumn {
+            public global::System.Data.DataColumn CodigoDespesaColumn {
                 get {
-                    return this.columncodigo_despesa;
+                    return this.columnCodigoDespesa;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn data_viagemColumn {
+            public global::System.Data.DataColumn DataViagemColumn {
                 get {
-                    return this.columndata_viagem;
+                    return this.columnDataViagem;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn valor_adiantadoColumn {
+            public global::System.Data.DataColumn ValorAdiantadoColumn {
                 get {
-                    return this.columnvalor_adiantado;
+                    return this.columnValorAdiantado;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn valor_apresentadoColumn {
+            public global::System.Data.DataColumn ValorApresentadoColumn {
                 get {
-                    return this.columnvalor_apresentado;
+                    return this.columnValorApresentado;
                 }
             }
             
@@ -1269,15 +1269,15 @@ namespace PrestacaoContas.AppLib {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Adiantamento_DespesaRow AddAdiantamento_DespesaRow(AdiantamentoRow parentAdiantamentoRowByFK__Adiantame__codig__117F9D94, DespesaRow parentDespesaRowByFK__Adiantame__codig__1273C1CD, System.DateTime data_viagem, decimal valor_adiantado, decimal valor_apresentado) {
+            public Adiantamento_DespesaRow AddAdiantamento_DespesaRow(AdiantamentoRow parentAdiantamentoRowByFK__Adiantame__codig__117F9D94, DespesaRow parentDespesaRowByFK__Adiantame__codig__1273C1CD, System.DateTime DataViagem, decimal ValorAdiantado, decimal ValorApresentado) {
                 Adiantamento_DespesaRow rowAdiantamento_DespesaRow = ((Adiantamento_DespesaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
                         null,
-                        data_viagem,
-                        valor_adiantado,
-                        valor_apresentado};
+                        DataViagem,
+                        ValorAdiantado,
+                        ValorApresentado};
                 if ((parentAdiantamentoRowByFK__Adiantame__codig__117F9D94 != null)) {
                     columnValuesArray[1] = parentAdiantamentoRowByFK__Adiantame__codig__117F9D94[0];
                 }
@@ -1291,9 +1291,9 @@ namespace PrestacaoContas.AppLib {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Adiantamento_DespesaRow FindBycodigo_adiantamento_despesa(int codigo_adiantamento_despesa) {
+            public Adiantamento_DespesaRow FindByCodigo(int Codigo) {
                 return ((Adiantamento_DespesaRow)(this.Rows.Find(new object[] {
-                            codigo_adiantamento_despesa})));
+                            Codigo})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1313,40 +1313,40 @@ namespace PrestacaoContas.AppLib {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columncodigo_adiantamento_despesa = base.Columns["codigo_adiantamento_despesa"];
-                this.columncodigo_adiantamento = base.Columns["codigo_adiantamento"];
-                this.columncodigo_despesa = base.Columns["codigo_despesa"];
-                this.columndata_viagem = base.Columns["data_viagem"];
-                this.columnvalor_adiantado = base.Columns["valor_adiantado"];
-                this.columnvalor_apresentado = base.Columns["valor_apresentado"];
+                this.columnCodigo = base.Columns["Codigo"];
+                this.columnCodigoAdiantamento = base.Columns["CodigoAdiantamento"];
+                this.columnCodigoDespesa = base.Columns["CodigoDespesa"];
+                this.columnDataViagem = base.Columns["DataViagem"];
+                this.columnValorAdiantado = base.Columns["ValorAdiantado"];
+                this.columnValorApresentado = base.Columns["ValorApresentado"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columncodigo_adiantamento_despesa = new global::System.Data.DataColumn("codigo_adiantamento_despesa", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncodigo_adiantamento_despesa);
-                this.columncodigo_adiantamento = new global::System.Data.DataColumn("codigo_adiantamento", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncodigo_adiantamento);
-                this.columncodigo_despesa = new global::System.Data.DataColumn("codigo_despesa", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncodigo_despesa);
-                this.columndata_viagem = new global::System.Data.DataColumn("data_viagem", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndata_viagem);
-                this.columnvalor_adiantado = new global::System.Data.DataColumn("valor_adiantado", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnvalor_adiantado);
-                this.columnvalor_apresentado = new global::System.Data.DataColumn("valor_apresentado", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnvalor_apresentado);
+                this.columnCodigo = new global::System.Data.DataColumn("Codigo", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCodigo);
+                this.columnCodigoAdiantamento = new global::System.Data.DataColumn("CodigoAdiantamento", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCodigoAdiantamento);
+                this.columnCodigoDespesa = new global::System.Data.DataColumn("CodigoDespesa", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCodigoDespesa);
+                this.columnDataViagem = new global::System.Data.DataColumn("DataViagem", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataViagem);
+                this.columnValorAdiantado = new global::System.Data.DataColumn("ValorAdiantado", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnValorAdiantado);
+                this.columnValorApresentado = new global::System.Data.DataColumn("ValorApresentado", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnValorApresentado);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columncodigo_adiantamento_despesa}, true));
-                this.columncodigo_adiantamento_despesa.AutoIncrement = true;
-                this.columncodigo_adiantamento_despesa.AutoIncrementSeed = -1;
-                this.columncodigo_adiantamento_despesa.AutoIncrementStep = -1;
-                this.columncodigo_adiantamento_despesa.AllowDBNull = false;
-                this.columncodigo_adiantamento_despesa.ReadOnly = true;
-                this.columncodigo_adiantamento_despesa.Unique = true;
-                this.columncodigo_adiantamento.AllowDBNull = false;
-                this.columncodigo_despesa.AllowDBNull = false;
-                this.columndata_viagem.AllowDBNull = false;
+                                this.columnCodigo}, true));
+                this.columnCodigo.AutoIncrement = true;
+                this.columnCodigo.AutoIncrementSeed = -1;
+                this.columnCodigo.AutoIncrementStep = -1;
+                this.columnCodigo.AllowDBNull = false;
+                this.columnCodigo.ReadOnly = true;
+                this.columnCodigo.Unique = true;
+                this.columnCodigoAdiantamento.AllowDBNull = false;
+                this.columnCodigoDespesa.AllowDBNull = false;
+                this.columnDataViagem.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2239,6 +2239,7 @@ namespace PrestacaoContas.AppLib {
                 this.columnCodigo.AllowDBNull = false;
                 this.columnCodigo.ReadOnly = true;
                 this.columnCodigo.Unique = true;
+                this.columnCodigo.Caption = "Código";
                 this.columnNome.MaxLength = 50;
                 this.columnLogin.MaxLength = 20;
                 this.columnSenha.MaxLength = 20;
@@ -3046,79 +3047,78 @@ namespace PrestacaoContas.AppLib {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int codigo_adiantamento_despesa {
+            public int Codigo {
                 get {
-                    return ((int)(this[this.tableAdiantamento_Despesa.codigo_adiantamento_despesaColumn]));
+                    return ((int)(this[this.tableAdiantamento_Despesa.CodigoColumn]));
                 }
                 set {
-                    this[this.tableAdiantamento_Despesa.codigo_adiantamento_despesaColumn] = value;
+                    this[this.tableAdiantamento_Despesa.CodigoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int codigo_adiantamento {
+            public int CodigoAdiantamento {
                 get {
-                    return ((int)(this[this.tableAdiantamento_Despesa.codigo_adiantamentoColumn]));
+                    return ((int)(this[this.tableAdiantamento_Despesa.CodigoAdiantamentoColumn]));
                 }
                 set {
-                    this[this.tableAdiantamento_Despesa.codigo_adiantamentoColumn] = value;
+                    this[this.tableAdiantamento_Despesa.CodigoAdiantamentoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int codigo_despesa {
+            public int CodigoDespesa {
                 get {
-                    return ((int)(this[this.tableAdiantamento_Despesa.codigo_despesaColumn]));
+                    return ((int)(this[this.tableAdiantamento_Despesa.CodigoDespesaColumn]));
                 }
                 set {
-                    this[this.tableAdiantamento_Despesa.codigo_despesaColumn] = value;
+                    this[this.tableAdiantamento_Despesa.CodigoDespesaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public System.DateTime data_viagem {
+            public System.DateTime DataViagem {
                 get {
-                    return ((global::System.DateTime)(this[this.tableAdiantamento_Despesa.data_viagemColumn]));
+                    return ((global::System.DateTime)(this[this.tableAdiantamento_Despesa.DataViagemColumn]));
                 }
                 set {
-                    this[this.tableAdiantamento_Despesa.data_viagemColumn] = value;
+                    this[this.tableAdiantamento_Despesa.DataViagemColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal valor_adiantado {
+            public decimal ValorAdiantado {
                 get {
                     try {
-                        return ((decimal)(this[this.tableAdiantamento_Despesa.valor_adiantadoColumn]));
+                        return ((decimal)(this[this.tableAdiantamento_Despesa.ValorAdiantadoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'valor_adiantado\' in table \'Adiantamento_Despesa\' is DBNull." +
-                                "", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'ValorAdiantado\' in table \'Adiantamento_Despesa\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableAdiantamento_Despesa.valor_adiantadoColumn] = value;
+                    this[this.tableAdiantamento_Despesa.ValorAdiantadoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal valor_apresentado {
+            public decimal ValorApresentado {
                 get {
                     try {
-                        return ((decimal)(this[this.tableAdiantamento_Despesa.valor_apresentadoColumn]));
+                        return ((decimal)(this[this.tableAdiantamento_Despesa.ValorApresentadoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'valor_apresentado\' in table \'Adiantamento_Despesa\' is DBNul" +
-                                "l.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'ValorApresentado\' in table \'Adiantamento_Despesa\' is DBNull" +
+                                ".", e);
                     }
                 }
                 set {
-                    this[this.tableAdiantamento_Despesa.valor_apresentadoColumn] = value;
+                    this[this.tableAdiantamento_Despesa.ValorApresentadoColumn] = value;
                 }
             }
             
@@ -3146,26 +3146,26 @@ namespace PrestacaoContas.AppLib {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool Isvalor_adiantadoNull() {
-                return this.IsNull(this.tableAdiantamento_Despesa.valor_adiantadoColumn);
+            public bool IsValorAdiantadoNull() {
+                return this.IsNull(this.tableAdiantamento_Despesa.ValorAdiantadoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Setvalor_adiantadoNull() {
-                this[this.tableAdiantamento_Despesa.valor_adiantadoColumn] = global::System.Convert.DBNull;
+            public void SetValorAdiantadoNull() {
+                this[this.tableAdiantamento_Despesa.ValorAdiantadoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool Isvalor_apresentadoNull() {
-                return this.IsNull(this.tableAdiantamento_Despesa.valor_apresentadoColumn);
+            public bool IsValorApresentadoNull() {
+                return this.IsNull(this.tableAdiantamento_Despesa.ValorApresentadoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Setvalor_apresentadoNull() {
-                this[this.tableAdiantamento_Despesa.valor_apresentadoColumn] = global::System.Convert.DBNull;
+            public void SetValorApresentadoNull() {
+                this[this.tableAdiantamento_Despesa.ValorApresentadoColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -5184,12 +5184,12 @@ SELECT codigo_municipio, nome_municipio, uf FROM Municipio WHERE (codigo_municip
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Adiantamento_Despesa";
-            tableMapping.ColumnMappings.Add("codigo_adiantamento_despesa", "codigo_adiantamento_despesa");
-            tableMapping.ColumnMappings.Add("codigo_adiantamento", "codigo_adiantamento");
-            tableMapping.ColumnMappings.Add("codigo_despesa", "codigo_despesa");
-            tableMapping.ColumnMappings.Add("data_viagem", "data_viagem");
-            tableMapping.ColumnMappings.Add("valor_adiantado", "valor_adiantado");
-            tableMapping.ColumnMappings.Add("valor_apresentado", "valor_apresentado");
+            tableMapping.ColumnMappings.Add("codigo_adiantamento_despesa", "Codigo");
+            tableMapping.ColumnMappings.Add("codigo_adiantamento", "CodigoAdiantamento");
+            tableMapping.ColumnMappings.Add("codigo_despesa", "CodigoDespesa");
+            tableMapping.ColumnMappings.Add("data_viagem", "DataViagem");
+            tableMapping.ColumnMappings.Add("valor_adiantado", "ValorAdiantado");
+            tableMapping.ColumnMappings.Add("valor_apresentado", "ValorApresentado");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -5244,12 +5244,54 @@ SELECT codigo_adiantamento_despesa, codigo_adiantamento, codigo_despesa, data_vi
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[6];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT codigo_adiantamento_despesa, codigo_adiantamento, codigo_despesa, data_via" +
                 "gem, valor_adiantado, valor_apresentado FROM dbo.Adiantamento_Despesa";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = @"INSERT INTO [dbo].[Adiantamento_Despesa] ([codigo_adiantamento], [codigo_despesa], [data_viagem], [valor_adiantado], [valor_apresentado]) VALUES (@codigoAdiantamento, @codigoDespesa, @dataViagem, @valorAdiantado, @valorApresentado);
+SELECT codigo_adiantamento_despesa, codigo_adiantamento, codigo_despesa, data_viagem, valor_adiantado, valor_apresentado FROM Adiantamento_Despesa WHERE (codigo_adiantamento_despesa = SCOPE_IDENTITY())";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codigoAdiantamento", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "codigo_adiantamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codigoDespesa", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "codigo_despesa", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@dataViagem", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "data_viagem", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@valorAdiantado", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 15, 2, "valor_adiantado", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@valorApresentado", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 15, 2, "valor_apresentado", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "DELETE FROM [dbo].[Adiantamento_Despesa] WHERE codigo_adiantamento_despesa = @cod" +
+                "igoAdiantamentoDespesa";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codigoAdiantamentoDespesa", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "codigo_adiantamento_despesa", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = @"SELECT adiantaDespesa.codigo_adiantamento_despesa, despesa.descricao_despesa,adiantaDespesa.codigo_adiantamento, adiantaDespesa.codigo_despesa, adiantaDespesa.data_viagem, adiantaDespesa.valor_adiantado, adiantaDespesa.valor_apresentado FROM dbo.Adiantamento_Despesa adiantaDespesa
+LEFT join dbo.Despesa despesa  on
+  despesa.codigo_despesa =  adiantaDespesa.codigo_despesa ";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[4].Connection = this.Connection;
+            this._commandCollection[4].CommandText = @"SELECT adiantaDespesa.codigo_adiantamento_despesa, despesa.descricao_despesa as DescricaoDespesa,adiantaDespesa.codigo_adiantamento, adiantaDespesa.codigo_despesa, adiantaDespesa.data_viagem, adiantaDespesa.valor_adiantado, adiantaDespesa.valor_apresentado FROM dbo.Adiantamento_Despesa adiantaDespesa
+LEFT join dbo.Despesa despesa  on
+  despesa.codigo_despesa =  adiantaDespesa.codigo_despesa 
+where  adiantaDespesa.codigo_adiantamento = @codigoAdiantamento
+order by  adiantaDespesa.data_viagem ,adiantaDespesa.codigo_despesa";
+            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codigoAdiantamento", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "codigo_adiantamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[5] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[5].Connection = this.Connection;
+            this._commandCollection[5].CommandText = @"UPDATE [dbo].[Adiantamento_Despesa] SET [codigo_adiantamento] = @codigoAdiantamento, [codigo_despesa] = @codigoDespesa, [data_viagem] = @dataViagem, [valor_adiantado] = @valorAdiantado, [valor_apresentado] = @valorApresentado WHERE ([codigo_adiantamento_despesa] = @codigoAdiantamentoDespesa);
+SELECT codigo_adiantamento_despesa, codigo_adiantamento, codigo_despesa, data_viagem, valor_adiantado, valor_apresentado FROM Adiantamento_Despesa WHERE (codigo_adiantamento_despesa = @codigoAdiantamentoDespesa)";
+            this._commandCollection[5].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codigoAdiantamentoDespesa", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "codigo_adiantamento_despesa", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codigoAdiantamento", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "codigo_adiantamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codigoDespesa", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "codigo_despesa", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@dataViagem", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "data_viagem", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@valorAdiantado", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 15, 2, "valor_adiantado", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@valorApresentado", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 15, 2, "valor_apresentado", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5271,6 +5313,56 @@ SELECT codigo_adiantamento_despesa, codigo_adiantamento, codigo_despesa, data_vi
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual PrestacaoContasDataSet.Adiantamento_DespesaDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            PrestacaoContasDataSet.Adiantamento_DespesaDataTable dataTable = new PrestacaoContasDataSet.Adiantamento_DespesaDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByAdiantamentoDespesa(PrestacaoContasDataSet.Adiantamento_DespesaDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual PrestacaoContasDataSet.Adiantamento_DespesaDataTable GetDataByAdiantamentoDespesa() {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
+            PrestacaoContasDataSet.Adiantamento_DespesaDataTable dataTable = new PrestacaoContasDataSet.Adiantamento_DespesaDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByAdiantamentoDespesaCodigo(PrestacaoContasDataSet.Adiantamento_DespesaDataTable dataTable, int codigoAdiantamento) {
+            this.Adapter.SelectCommand = this.CommandCollection[4];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(codigoAdiantamento));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual PrestacaoContasDataSet.Adiantamento_DespesaDataTable GetDataByAdiantamentoDespesaCodigo(int codigoAdiantamento) {
+            this.Adapter.SelectCommand = this.CommandCollection[4];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(codigoAdiantamento));
             PrestacaoContasDataSet.Adiantamento_DespesaDataTable dataTable = new PrestacaoContasDataSet.Adiantamento_DespesaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -5442,9 +5534,102 @@ SELECT codigo_adiantamento_despesa, codigo_adiantamento, codigo_despesa, data_vi
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int codigo_adiantamento, int codigo_despesa, System.DateTime data_viagem, global::System.Nullable<decimal> valor_adiantado, global::System.Nullable<decimal> valor_apresentado, int Original_codigo_adiantamento_despesa, int Original_codigo_adiantamento, int Original_codigo_despesa, System.DateTime Original_data_viagem, global::System.Nullable<decimal> Original_valor_adiantado, global::System.Nullable<decimal> Original_valor_apresentado) {
-            return this.Update(codigo_adiantamento, codigo_despesa, data_viagem, valor_adiantado, valor_apresentado, Original_codigo_adiantamento_despesa, Original_codigo_adiantamento, Original_codigo_despesa, Original_data_viagem, Original_valor_adiantado, Original_valor_apresentado, Original_codigo_adiantamento_despesa);
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int AddNewAdiantamentoDespesa(int codigoAdiantamento, int codigoDespesa, System.DateTime dataViagem, global::System.Nullable<decimal> valorAdiantado, global::System.Nullable<decimal> valorApresentado) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
+            command.Parameters[0].Value = ((int)(codigoAdiantamento));
+            command.Parameters[1].Value = ((int)(codigoDespesa));
+            command.Parameters[2].Value = ((System.DateTime)(dataViagem));
+            if ((valorAdiantado.HasValue == true)) {
+                command.Parameters[3].Value = ((decimal)(valorAdiantado.Value));
+            }
+            else {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((valorApresentado.HasValue == true)) {
+                command.Parameters[4].Value = ((decimal)(valorApresentado.Value));
+            }
+            else {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, false)]
+        public virtual int DeleteAdiantamentoDespesa(int codigoAdiantamentoDespesa) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
+            command.Parameters[0].Value = ((int)(codigoAdiantamentoDespesa));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateAdiantamentoDespesa(int codigoAdiantamentoDespesa, int codigoAdiantamento, int codigoDespesa, System.DateTime dataViagem, global::System.Nullable<decimal> valorAdiantado, global::System.Nullable<decimal> valorApresentado) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[5];
+            command.Parameters[0].Value = ((int)(codigoAdiantamentoDespesa));
+            command.Parameters[1].Value = ((int)(codigoAdiantamento));
+            command.Parameters[2].Value = ((int)(codigoDespesa));
+            command.Parameters[3].Value = ((System.DateTime)(dataViagem));
+            if ((valorAdiantado.HasValue == true)) {
+                command.Parameters[4].Value = ((decimal)(valorAdiantado.Value));
+            }
+            else {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((valorApresentado.HasValue == true)) {
+                command.Parameters[5].Value = ((decimal)(valorApresentado.Value));
+            }
+            else {
+                command.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     
@@ -6986,13 +7171,19 @@ SELECT codigo_funcionario, nome_funcionario, login, senha, tipo_funcionario FROM
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT        codigo_adiantamento, codigo_funcionario, nome_funcionario, data_adiantamento, mes_adiantamento, ano_adiantamento, data_prestacao, valor_adiantamento, 
                          valor_apresentado, valor_fechamento, data_inicial_viagem, data_final_viagem
 FROM            vw_adiantamento_funcionario";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = @"SELECT ano_adiantamento, codigo_adiantamento, codigo_funcionario, data_adiantamento, data_final_viagem, data_inicial_viagem, data_prestacao, mes_adiantamento, nome_funcionario, valor_adiantamento, valor_apresentado, valor_fechamento FROM vw_adiantamento_funcionario 
+WHERE (0 = (CASE WHEN ( @codigo_funcionario = - 1) THEN 0 ELSE (CASE WHEN (codigo_funcionario = @codigo_funcionario) THEN 0 ELSE - 999 END)  END)) ";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Codigo_funcionario", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7014,6 +7205,32 @@ FROM            vw_adiantamento_funcionario";
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual PrestacaoContasDataSet.vw_adiantamento_funcionarioDataTable GetDataVwAdiantamentoFuncionario() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            PrestacaoContasDataSet.vw_adiantamento_funcionarioDataTable dataTable = new PrestacaoContasDataSet.vw_adiantamento_funcionarioDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByVwAdiantamentoFuncionarioFunc(PrestacaoContasDataSet.vw_adiantamento_funcionarioDataTable dataTable, int Codigo_funcionario) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Codigo_funcionario));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual PrestacaoContasDataSet.vw_adiantamento_funcionarioDataTable GetDataByVwAdiantamentoFuncionarioFunc(int Codigo_funcionario) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Codigo_funcionario));
             PrestacaoContasDataSet.vw_adiantamento_funcionarioDataTable dataTable = new PrestacaoContasDataSet.vw_adiantamento_funcionarioDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

@@ -5,7 +5,7 @@ using System.Text;
 using PrestacaoContas.AppLib.PrestacaoContasDataSetTableAdapters;
 using PrestacaoContas.AppLib;
 
-namespace ControleUsuarios.AppLib.BO
+namespace PrestacaoContas.AppLib.BO
 {
     /// <summary>
     /// Classe de Regras de Negócio de Adiantamento
