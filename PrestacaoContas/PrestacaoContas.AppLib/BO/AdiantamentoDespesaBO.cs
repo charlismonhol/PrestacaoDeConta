@@ -25,11 +25,11 @@ namespace PrestacaoContas.AppLib.BO
         /// <param name="dataViagem">Data Viagem</param>
         /// <param name="valorAdiantado">Valor Adiantado</param>
         /// <param name="valorApresentado">Valor Apresentado</param>
-    
-      
-      public void Inserir(int codigoAdiantamento,int codigoDespesa,DateTime dataViagem,decimal valorAdiantado,decimal valorApresentado)
+
+
+        public void Inserir(int codigoAdiantamento, int codigoDespesa, DateTime dataViagem, decimal valorAdiantado, decimal valorApresentado)
         {
-          tableAdapter.AddNewAdiantamentoDespesa(codigoAdiantamento,codigoDespesa,dataViagem,valorAdiantado,valorApresentado);
+            tableAdapter.AddNewAdiantamentoDespesa(codigoAdiantamento, codigoDespesa, dataViagem, valorAdiantado, valorApresentado);
         }
 
         /// <summary>
@@ -39,6 +39,8 @@ namespace PrestacaoContas.AppLib.BO
         public void Deletar(int codigo)
         {
             tableAdapter.DeleteAdiantamentoDespesa(codigo);
+            //charlis monhol
+
         }
 
         /// <summary>
@@ -50,9 +52,9 @@ namespace PrestacaoContas.AppLib.BO
         /// <param name="dataViagem">Data Viagem</param>
         /// <param name="valorAdiantado">Valor Adiantado</param>
         /// <param name="valorApresentado">Valor Apresentado</param>
-        public void Alterar(int codigoAdiantamentoDespesa,int codigoAdiantamento,int codigoDespesa,DateTime dataViagem,decimal valorAdiantado,decimal valorApresentado)
+        public void Alterar(int codigoAdiantamentoDespesa, int codigoAdiantamento, int codigoDespesa, DateTime dataViagem, decimal valorAdiantado, decimal valorApresentado)
         {
-          tableAdapter.UpdateAdiantamentoDespesa(codigoAdiantamentoDespesa,codigoAdiantamento,codigoDespesa,dataViagem,valorAdiantado,valorApresentado);
+            tableAdapter.UpdateAdiantamentoDespesa(codigoAdiantamentoDespesa, codigoAdiantamento, codigoDespesa, dataViagem, valorAdiantado, valorApresentado);
         }
 
         /// <summary>
@@ -71,8 +73,8 @@ namespace PrestacaoContas.AppLib.BO
         /// <returns>Dados da Tabela de Adiantamento</returns>
         public PrestacaoContasDataSet.Adiantamento_DespesaDataTable ObterDespesaViagem(int codigoAdiantamento)
         {
-          return tableAdapter.GetDataByAdiantamentoDespesaCodigo(codigoAdiantamento);
-         
+            return tableAdapter.GetDataByAdiantamentoDespesaCodigo(codigoAdiantamento);
+
         }
 
         /// <summary>
