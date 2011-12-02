@@ -49,13 +49,13 @@ namespace PrestacaoContas.WebApp.Paginas {
         protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummaryMunicipio;
         
         /// <summary>
-        /// txtCodigo control.
+        /// Table1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField txtCodigo;
+        protected global::System.Web.UI.WebControls.Table Table1;
         
         /// <summary>
         /// lblMunicipio control.
@@ -76,15 +76,6 @@ namespace PrestacaoContas.WebApp.Paginas {
         protected global::System.Web.UI.WebControls.TextBox txtMunicipio;
         
         /// <summary>
-        /// RequiredFieldValidatorMunicipio control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorMunicipio;
-        
-        /// <summary>
         /// lblUf control.
         /// </summary>
         /// <remarks>
@@ -101,15 +92,6 @@ namespace PrestacaoContas.WebApp.Paginas {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtUf;
-        
-        /// <summary>
-        /// RequiredFieldValidatorMunicipio0 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorMunicipio0;
         
         /// <summary>
         /// btnGravar control.
@@ -146,5 +128,32 @@ namespace PrestacaoContas.WebApp.Paginas {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridViewMunicipio;
+        
+        /// <summary>
+        /// txtCodigo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField txtCodigo;
+        
+        /// <summary>
+        /// RequiredFieldValidatorMunicipio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorMunicipio;
+        
+        /// <summary>
+        /// RequiredFieldValidatorMunicipio0 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorMunicipio0;
     }
 }

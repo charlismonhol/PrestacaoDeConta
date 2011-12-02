@@ -16,7 +16,7 @@
         <div class="header">
             <div class="title">
                 <h1>
-                    controle de diarias de funcionário
+                Controle de Diárias de Funcionários
                 </h1>
             </div>
             <div class="loginDisplay">
@@ -25,7 +25,7 @@
                         [ <a href="~/Paginas/Login.aspx" ID="HeadLoginStatus" runat="server">Logar</a> ]
                     </AnonymousTemplate>
                     <LoggedInTemplate>
-                        Funcion <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        Usuário: <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
                         [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Sair" LogoutPageUrl="~/Paginas/Login.aspx"/> ]
                     </LoggedInTemplate>
                     <RoleGroups>

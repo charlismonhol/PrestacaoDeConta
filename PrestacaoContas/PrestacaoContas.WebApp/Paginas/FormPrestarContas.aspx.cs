@@ -49,7 +49,7 @@ namespace PrestacaoContas.WebApp.Paginas
     /// <summary>
     /// Método auxiliar para obter os dados do grid
     /// </summary>
-    protected void ObterDadosGrid(int codigoFuncionario)
+   /* protected void ObterDadosGrid(int codigoFuncionario)
     {
       grdListaAdiantamentos.EditIndex = -1;
       grdListaAdiantamentos.SelectedIndex = -1;
@@ -63,7 +63,7 @@ namespace PrestacaoContas.WebApp.Paginas
       grdListaAdiantamentos.DataBind();
       pnlGridPrincipal.Visible = true;
       pnlDespesas.Visible = false;
-    }
+    }*/
 
     protected void ObterDadosGridDespesa(int codigoAdiantamento)
     {
@@ -101,12 +101,12 @@ namespace PrestacaoContas.WebApp.Paginas
     {
     
     }
-
+/*
     protected void btnConsultar_Click(object sender,EventArgs e)
     {
       this.ObterDadosGrid(Convert.ToInt32(this.cbxFunc.SelectedItem.Value.ToString()));
 
-    }
+    }*/
 
     protected void grdListaAdiantamentos_SelectedIndexChanged(object sender,EventArgs e)
     {

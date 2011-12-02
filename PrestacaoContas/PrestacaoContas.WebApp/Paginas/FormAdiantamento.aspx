@@ -1,110 +1,119 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Modelo/Site.Master" AutoEventWireup="true"
-  CodeBehind="FormAdiantamento.aspx.cs" Inherits="PrestacaoContas.WebApp.Paginas.FormAdiantamento" %>
+    CodeBehind="FormAdiantamento.aspx.cs" Inherits="PrestacaoContas.WebApp.Paginas.FormAdiantamento" %>
 
 <%@ Register Src="../Controles/DatePickerControl.ascx" TagName="DatePickerControl"
-  TagPrefix="uc1" %>
+    TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-  <script src="~/Scripts/js/jquery-1.6.2.min.js" type="text/javascript" ></script> 
-<link href="~/Scripts/themes/base/jquery.ui.datepicker.css" rel="stylesheet" type="text/css"></link>
-  <script>
-    (function () {
-      ("#tabs").tabs();
-    });
-  </script>
-
-  <h2>
-    Cadastro de Adiantamenstos de Viagens/Diárias
+    <asp:Table ID="Table1" runat="server" HorizontalAlign="Center" Height="114px" Width="496px">
+        <asp:TableHeaderRow>
+            <asp:TableHeaderCell ColumnSpan="2">
+              <h2>
+    Cadastro de Adiantamento de Viagens/Diárias
   </h2>
-  <asp:HiddenField ID="txtCodigo" runat="server" 
-  onvaluechanged="txtCodigo_ValueChanged" />
-  <br />
-  <asp:Label ID="Label4" runat="server" Text="Código:"></asp:Label>
-  <asp:TextBox ID="txtCodigoAdiantamento" runat="server" CssClass="textEntry" 
-    Enabled="False" ForeColor="#666666" ReadOnly="True" Width="58px"></asp:TextBox>
-  <br />
-  <br />
-  <asp:Label ID="Label3" runat="server" Text="Funcionário"></asp:Label>
-  <asp:DropDownList ID="cbxFuncionario" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"
-    Width="357px">
-  </asp:DropDownList>
-  <br />
-  <br />
-  <asp:Label ID="Label2" runat="server" Text="Descrição"></asp:Label>
-  <asp:TextBox ID="txtDescricao" runat="server" Height="24px" Width="359px"></asp:TextBox>
-  <br />
-  <br />
-  <br />
-  <br />
-  <table>
-    <tr>
-      <td>
-        <uc1:DatePickerControl ID="dpcDataPrestacao" runat="server" />
-      </td>
-      <td>
-        <uc1:DatePickerControl ID="dpcDataAdiantamento" runat="server" />
-      </td>
-    </tr>
-  </table>
-  <br />
-  <br />
-  <asp:Button ID="btnGravar" runat="server" Text="Gravar" OnClick="btnGravar_Click1"
-    ValidationGroup="CamposObrigatorios" />
-  <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" />
-  <asp:Button ID="btnRemover" runat="server" Text="Remover" ValidationGroup="CamposObrigatorios"
-    Enabled="False" />
-  <br />
-  <br />
-  <asp:GridView ID="GridViewAdiantamento" runat="server" CellPadding="4" ForeColor="#333333"
-    GridLines="None" AutoGenerateSelectButton="True" 
-    onselectedindexchanged="GridViewAdiantamento_SelectedIndexChanged" 
-    Width="502px">
-    <AlternatingRowStyle BackColor="White" />
-    <EditRowStyle BackColor="#7C6F57" />
-    <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
-    <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
-    <PagerStyle BackColor="#666666" ForeColor="White" HorizontalAlign="Center" />
-    <RowStyle BackColor="#E3EAEB" />
-    <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="True" ForeColor="#333333" />
-    <SortedAscendingCellStyle BackColor="#F8FAFA" />
-    <SortedAscendingHeaderStyle BackColor="#246B61" />
-    <SortedDescendingCellStyle BackColor="#D4DFE1" />
-    <SortedDescendingHeaderStyle BackColor="#15524A" />
-  </asp:GridView>
-  <br />
-  <br />
-  <div id="tabs">
-    <ul>
-      <li><a href="#tabs-1">Nunc tincidunt</a></li>
-      <li><a href="#tabs-2">Proin dolor</a></li>
-      <li><a href="#tabs-3">Aenean lacinia</a></li>
-    </ul>
-    <div id="tabs-1">
-      <p>
-        
-    </div>
-    <div id="tabs-2">
-      <p>
-       </p>
-    </div>
-    <div id="tabs-3">
-      <p>
-       </p>
-      <p>
-      </p>
-    </div>
-  </div>
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
+            </asp:TableHeaderCell>
+        </asp:TableHeaderRow>
+        <asp:TableHeaderRow>
+            <asp:TableHeaderCell ColumnSpan="2">
+            </asp:TableHeaderCell>
+        </asp:TableHeaderRow>
+        <asp:TableRow>
+            <asp:TableCell></asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow>
+            <asp:TableCell></asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow>
+            <asp:TableCell HorizontalAlign="Right" Width="150px">
+                <asp:Label ID="Label4" runat="server" Text="Código:"></asp:Label>
+            </asp:TableCell>
+            <asp:TableCell>
+                <asp:TextBox ID="txtCodigoAdiantamento" runat="server" CssClass="textEntry" Enabled="False"
+                    ForeColor="#666666" ReadOnly="True" Width="58px"></asp:TextBox>
+            </asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow>
+            <asp:TableCell HorizontalAlign="Right">
+                <asp:Label ID="Label3" runat="server" Text="Funcionário"></asp:Label>
+            </asp:TableCell>
+            <asp:TableCell>
+                <asp:DropDownList ID="cbxFuncionario" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"
+                    Width="357px">
+                </asp:DropDownList>
+            </asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow>
+            <asp:TableCell HorizontalAlign="Right">
+                <asp:Label ID="Label2" runat="server" Text="Descrição"></asp:Label>
+            </asp:TableCell>
+            <asp:TableCell>
+                <asp:TextBox ID="txtDescricao" runat="server" Width="359px"></asp:TextBox>
+            </asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow>
+            <asp:TableCell HorizontalAlign="Right">
+                <asp:Label ID="Label5" runat="server" Text="Data do Adiantamento:"></asp:Label>
+            </asp:TableCell>
+            <asp:TableCell>
+                <uc1:DatePickerControl ID="dpcDataAdiantamento" runat="server" />
+            </asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow>
+            <asp:TableCell HorizontalAlign="Right">
+                <asp:Label ID="Label6" runat="server" Text="Data da Prestação:"></asp:Label>
+            </asp:TableCell>
+            <asp:TableCell>
+                <uc1:DatePickerControl ID="dpcDataPrestacao" runat="server" />
+            </asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow>
+            <asp:TableCell></asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow>
+            <asp:TableCell></asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow>
+            <asp:TableCell ColumnSpan="2" HorizontalAlign="Right">
+                <asp:Button ID="btnGravar" runat="server" Text="Gravar" OnClick="btnGravar_Click1"
+                    ValidationGroup="CamposObrigatorios" />
+                <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" />
+                <asp:Button ID="btnRemover" runat="server" Text="Remover" ValidationGroup="CamposObrigatorios"
+                    Enabled="False" />
+            </asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow>
+            <asp:TableCell></asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow>
+            <asp:TableCell></asp:TableCell>
+        </asp:TableRow>
+        <asp:TableFooterRow>
+            <asp:TableCell ColumnSpan="2">
+                <asp:GridView ID="GridViewAdiantamento" runat="server" CellPadding="3" GridLines="Vertical"
+                    AutoGenerateSelectButton="True" OnSelectedIndexChanged="GridViewAdiantamento_SelectedIndexChanged"
+                    Width="490px" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px"
+                    AutoGenerateColumns="False">
+                    <AlternatingRowStyle BackColor="#DCDCDC" />
+                    <Columns>
+                        <asp:BoundField DataField="codigo_adiantamento" HeaderText="Código" />
+                        <asp:BoundField DataField="codigo_funcionario" HeaderText="Código Funcionário" />
+                        <asp:BoundField DataField="data_adiantamento" HeaderText="Data Adiantamento" />
+                        <asp:BoundField DataField="data_prestacao" HeaderText="Data Prestação" />
+                        <asp:BoundField DataField="descricao_viagem" HeaderText="Descrição" />
+                    </Columns>
+                    <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
+                    <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+                    <RowStyle BackColor="#EEEEEE" ForeColor="Black" />
+                    <SelectedRowStyle BackColor="#008A8C" Font-Bold="True" ForeColor="White" />
+                    <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                    <SortedAscendingHeaderStyle BackColor="#0000A9" />
+                    <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                    <SortedDescendingHeaderStyle BackColor="#000065" />
+                </asp:GridView>
+            </asp:TableCell>
+        </asp:TableFooterRow>
+    </asp:Table>
+    <asp:HiddenField ID="txtCodigo" runat="server" OnValueChanged="txtCodigo_ValueChanged" />
 </asp:Content>
