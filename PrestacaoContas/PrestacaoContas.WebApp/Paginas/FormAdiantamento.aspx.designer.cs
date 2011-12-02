@@ -13,13 +13,13 @@ namespace PrestacaoContas.WebApp.Paginas {
     public partial class FormAdiantamento {
         
         /// <summary>
-        /// txtCodigo control.
+        /// Table1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField txtCodigo;
+        protected global::System.Web.UI.WebControls.Table Table1;
         
         /// <summary>
         /// Label4 control.
@@ -56,17 +56,17 @@ namespace PrestacaoContas.WebApp.Paginas {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList cbxFuncionario;
-                                 
+        
         /// <summary>
         /// Label2 control.
         /// </summary>
-        /// <remarks>                            
+        /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label2;
         
-      /// <summary>
+        /// <summary>
         /// txtDescricao control.
         /// </summary>
         /// <remarks>
@@ -76,13 +76,13 @@ namespace PrestacaoContas.WebApp.Paginas {
         protected global::System.Web.UI.WebControls.TextBox txtDescricao;
         
         /// <summary>
-        /// dpcDataPrestacao control.
+        /// Label5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::PrestacaoContas.WebApp.Controles.DatePickerControl dpcDataPrestacao;
+        protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
         /// dpcDataAdiantamento control.
@@ -92,6 +92,24 @@ namespace PrestacaoContas.WebApp.Paginas {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::PrestacaoContas.WebApp.Controles.DatePickerControl dpcDataAdiantamento;
+        
+        /// <summary>
+        /// Label6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label6;
+        
+        /// <summary>
+        /// dpcDataPrestacao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::PrestacaoContas.WebApp.Controles.DatePickerControl dpcDataPrestacao;
         
         /// <summary>
         /// btnGravar control.
@@ -128,5 +146,14 @@ namespace PrestacaoContas.WebApp.Paginas {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridViewAdiantamento;
+        
+        /// <summary>
+        /// txtCodigo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField txtCodigo;
     }
 }

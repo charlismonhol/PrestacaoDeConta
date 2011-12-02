@@ -36,7 +36,7 @@ namespace PrestacaoContas.WebApp.Controles
             if (!this.Page.IsPostBack)
             {
                 calCalendar.Visible = false;
-                lblDate.Text = (this.Label != null && this.Label.Length > 0 ? this.Label : "Informe o Label");
+                lblDate.Text = (this.Label != null && this.Label.Length > 0 ? this.Label : "");
                 if (this.SelectedDate != null && this.SelectedDate > DateTime.MinValue)
                 {
                     calCalendar.SelectedDate = this.SelectedDate;

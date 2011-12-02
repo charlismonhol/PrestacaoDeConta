@@ -32,7 +32,7 @@
   FailureText="Login ou Senha Inválido. Por favor tente novamente" 
   Font-Names="Verdana" Font-Size="0.8em" ForeColor="#333333" 
   LoginButtonText="Acessar" onauthenticate="LoginUser_Authenticate" 
-  PasswordLabelText="Senha" 
+  PasswordLabelText="Senha:" 
   PasswordRequiredErrorMessage="Preenchimento do campo senha é obrigatório " 
   TitleText="Autenticação" UserNameLabelText="Usuário:" 
   UserNameRequiredErrorMessage="Preenchimento do campo usuário é obrigatório" 
